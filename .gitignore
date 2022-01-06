@@ -1,23 +1,55 @@
-# Compiled class file
-*.class
+# ------------------------------------------------------------------------
+# This file specifies intentionally untracked files that Git should ignore
+# - https://git-scm.com/docs/gitignore
+# ------------------------------------------------------------------------
 
-# Log file
+# Numerous always-ignore extensions
+*.bak
+*.cvs
+*.db
+*.diff
+*.err
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
+*.orig
+*.rej
 *.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Ignore all files and directories starting with . or ~ or ._ or ending with ~
+.*
+~*
+*~
+._*
+# but track
+!.browserslist
+!.editorconfig
+!.gitattributes
+!.github
+!.gitignore
+!.jscsrc
+!.jshintignore
+!.travis.yml
+
+# Ignore all files with .lock extentions
+*.lock
+# but track
+!composer.lock
+
+# OS or Editor files and folders
+*.code-workspace
+*.elc
+*.esproj
+*.komodoproject
+*.sublime*
+*.tmproj*
+
+# Dependencies
+bower_components
+node_modules
+vendor
+.idea
+
+# Other UnderStrap specific files and directories
+phpcs.xml
+dist/
+dist-product/
+**/img
